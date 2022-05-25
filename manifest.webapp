@@ -14,9 +14,6 @@
   "origin": "app://buster.luxferre.top",
   "fullscreen": true,
   "permissions": {
-    "engmode-extension": {
-      "description": "Handle KaiOS 2.5.1+ devices"
-    },
     "external-api": {
       "description": "Handle KaiOS 2.5.1+ devices"
     },
