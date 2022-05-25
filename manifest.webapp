@@ -1,0 +1,39 @@
+{
+  "version": "0.0.1",
+  "name": "AppBuster",
+  "description": "KaiOS pre-installed application manager",
+  "launch_path": "/index.html",
+  "type": "certified",
+  "icons": {
+    "56": "/img/icon56.png",
+    "112": "/img/icon112.png"
+  },
+  "developer": {
+    "name": "Luxferre"
+  },
+  "origin": "app://buster.luxferre.top",
+  "fullscreen": true,
+  "permissions": {
+    "engmode-extension": {
+      "description": "Handle KaiOS 2.5.1+ devices"
+    },
+    "external-api": {
+      "description": "Handle KaiOS 2.5.1+ devices"
+    },
+    "kaiosextension": {
+      "description": "Handle KaiOS 2.5 devices"
+    },
+    "jrdextension": {
+      "description": "Handle KaiOS 1.0 devices by TCL"
+    },
+    "device-storage:apps": {
+      "access": "readwrite",
+      "description": "Support package installation"
+    },
+    "webapps-manage": {
+      "description": "Support package installation"
+    }
+  },
+  "theme_color": "#8702fb",
+  "cursor": "false"
+}
