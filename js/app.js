@@ -62,10 +62,7 @@ window.addEventListener('DOMContentLoaded', function() {
           toggleApp(Number(e.key))
           break
         case '#':
-          if(window.confirm('This will normally prompt you to reboot the phone, but since \\
-          the engmode-extension permission is removed, you\'ll have to do it by yourself.\n \\
-          Once you\'ve made sure of all changes, press OK (the RSK one) to save them, close the app, \\
-          hold down the Power button and restart the device.\nSave changes?'))
+          if(window.confirm('This will normally prompt you to reboot the phone, but since the engmode-extension permission is removed, you\'ll have to do it by yourself.\nOnce you\'ve made sure of all changes, press OK (the RSK one) to save them, close the app, hold down the Power button and restart the device.\nSave changes?'))
             masterExt.setPropertyValue('sys.powerctl', 'reboot')
           break
         default:
