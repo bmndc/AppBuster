@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', function() {
           break
         case '#':
 					// the modified prompt was misleading
-          if(window.confirm(`This will normally prompt you to reboot the phone, but since the engmode-extension permission is removed, you'll have to do it by yourself.\nOnce you've made sure of all the changes, press OK (the RSK one) to close the app. After the app closes, restart your device manually to save the changes.`))
+          if(window.confirm(`One last touch!\nOnce you've made sure of all the changes, press OK (the RSK one) to close the app, then restart your device manually for them to take effect. Or, press Cancel now to review your changes.\nProceed?`))
             window.close()
           break
         default:
