@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
   var mgmt = navigator.mozApps.mgmt,
-    masterExt = navigator.engmodeExtension || navigator.kaiosExtension || navigator.jrdExtension,
     appListPage = document.getElementById('dynapps'),
     includeSystemRole = true
   
@@ -62,8 +61,9 @@ window.addEventListener('DOMContentLoaded', function() {
           toggleApp(Number(e.key))
           break
         case '#':
-          if(window.confirm('This will normally prompt you to reboot the phone, but since the engmode-extension permission is removed, you\'ll have to do it by yourself.\nOnce you\'ve made sure of all changes, press OK (the RSK one) to save them, close the app, hold down the Power button and restart the device.\nSave changes?'))
-            masterExt.setPropertyValue('sys.powerctl', 'reboot')
+					// the modified prompt was misleading
+          if(window.confirm(`This will normally prompt you to reboot the phone, but since the engmode-extension permission is removed, you'll have to do it by yourself.\nOnce you've made sure of all the changes, press OK (the RSK one) to close the app. After the app closes, restart your device manually to save the changes.`))
+            window.close()
           break
         default:
           break

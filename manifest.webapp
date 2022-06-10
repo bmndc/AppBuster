@@ -14,21 +14,8 @@
   "origin": "app://buster.luxferre.top",
   "fullscreen": true,
   "permissions": {
-    "external-api": {
-      "description": "Handle KaiOS 2.5.1+ devices"
-    },
-    "kaiosextension": {
-      "description": "Handle KaiOS 2.5 devices"
-    },
-    "jrdextension": {
-      "description": "Handle KaiOS 1.0 devices by TCL"
-    },
-    "device-storage:apps": {
-      "access": "readwrite",
-      "description": "Support package installation"
-    },
     "webapps-manage": {
-      "description": "Support package installation"
+      "description": "mozApps.mgmt"
     }
   },
   "theme_color": "#8702fb",
